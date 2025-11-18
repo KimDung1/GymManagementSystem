@@ -1,0 +1,88 @@
+/* css/style.css */
+
+/* --- CÁC THIẾT LẬP CHUNG --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #1c1e21;
+}
+
+/* --- CÁC NHÓM INPUT --- */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #606770;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* --- CÁC LIÊN KẾT PHỤ --- */
+.extra-links {
+    margin-top: 15px;
+}
+
+.extra-links a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* --- ĐỊNH NGHĨA CÁC NÚT BẤM (BUTTON) --- */
+/* Lớp .btn chung cho tất cả các nút */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Lớp riêng cho nút Đăng Nhập */
+.btn-login {
+    background-color: #1877f2;
+}
+.btn-login:hover {
+    background-color: #166fe5;
+}
+
+/* Lớp riêng cho nút Đăng Ký */
+.btn-register {
+    background-color: #42b72a;
+}
+.btn-register:hover {
+    background-color: #36a420;
+}
