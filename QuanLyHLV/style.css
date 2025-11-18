@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+.main_content {
+    width: 100%;
+}
+header {
+    width: 100%;
+    padding: 15px;
+    flex: 1;
+    display: flex;
+}
+.side_bar {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.side_bar .side_bar_title {
+    padding: 20px;
+    color: #457eff;
+}
+
+.side_bar .side_bar_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side_bar .side_bar_content a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.main_content table {
+    border: black;
+    margin: auto;
+    margin-top: 30px;
+}
+main {
+    background-color: #f5f6fa;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 0px 20px;
+}
+.main_title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.box_input {
+    position: relative;
+}
+.box_input svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    left: 10px;
+}
+
+.box_input input {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 0px 10px 30px;
+    width: 500px;
+    background-color: #f5f6fa;
+}
+.box_input input:focus {
+    outline: none;
+}
+.header_left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn_update {
+    width: 50px;
+    background-color: aqua;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.btn_delete {
+    width: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+thead {
+    background-color: #fcfdfd;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+thead {
+
+    border: 1px solid black;
+}
+
+thead th {
+    padding: 7px;
+}
+tbody {
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+}
+
+
+tbody tr td { 
+    padding: 7px;
+}
