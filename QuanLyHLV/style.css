@@ -20,9 +20,10 @@ body {
 }
 header {
     width: 100%;
-    padding: 15px;
+    padding: 15px 40px;
     flex: 1;
     display: flex;
+    justify-content: space-between;
 }
 .side_bar {
     width: 300px;
@@ -50,9 +51,11 @@ header {
     color: black;
 }
 .main_content table {
-    border: black;
     margin: auto;
     margin-top: 30px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
 }
 main {
     background-color: #f5f6fa;
@@ -73,13 +76,14 @@ main {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    left: 10px;
+    left: 15px;
+    color: #8a8a8c;
 }
 
 .box_input input {
     border-radius: 50px;
     border: none;
-    padding: 10px 0px 10px 30px;
+    padding: 10px 0px 10px 45px;
     width: 500px;
     background-color: #f5f6fa;
 }
@@ -114,30 +118,53 @@ button {
 
 thead {
     background-color: #fcfdfd;
-}
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
-    text-align: center;
-    border-radius: 10px;
-}
-
-thead {
-
-    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
 }
 
 thead th {
     padding: 7px;
 }
 tbody {
-    border: 1px solid black;
-    border-bottom-left-radius: 10px;
     background-color: white;
 }
-
-
-tbody tr td { 
+tbody tr td {
     padding: 7px;
+}
+img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header_right {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_right p {
+    font-size: 13px;
+}
+
+.header_right_icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_right_icon svg {
+    width: 10px;
+    height: 10px;
 }
