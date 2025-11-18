@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gym Management</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="side_bar">
+            <div class="side_bar_title">
+                <h1>Admin</h1>
+            </div>
+            <div class="side_bar_content">
+                <a href="">Hội Viên</a>
+                <a href="">Huấn Luyện Viên</a>
+            </div>
+        </div>
+        <div class="main_content">
+            <header>
+                <div class="header_left">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+                    >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                    <div class="box_input">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                        </svg>
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class="header_right"></div>
+            </header>
+            <main>
+                <div class="main_title">Danh Sách Huấn Luyện Viên</div>
+                <div class="main_content">
+                    <table>
+                        <thead>
+                            <th>ID</th>
+                            <th>Họ Tên</th>
+                            <th>Số Điện Thoại</th>
+                            <th>Trạng Thái</th>
+                            <th>Gói Tập</th>
+                            <th>Hết Hạn</th>
+                            <th>Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>0123456789</td>
+                                <td>Còn Hạn</td>
+                                <td>Gym</td>
+                                <td>12/2/2025</td>
+                                <td>
+                                    <button class="btn_update">Sửa</button>
+                                    <button class="btn_delete">Xóa</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
