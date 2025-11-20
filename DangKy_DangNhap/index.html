@@ -7,12 +7,18 @@
     <title>Trang Đăng Nhập</title>
     <!-- Liên kết tới file CSS bên ngoài -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Thêm style cho thông báo */
+        .message { margin-top: 15px; padding: 10px; border-radius: 5px; font-weight: bold; }
+        .message.error { background-color: #f8d7da; color: #721c24; }
+        .message.success { background-color: #d4edda; color: #155724; }
+    </style>
 </head>
 <body>
 
     <div class="form-container">
         <h2>Đăng Nhập</h2>
-        <form>
+        <form id="loginForm">
             <div class="input-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
@@ -21,6 +27,7 @@
                 <label for="password">Mật Khẩu</label>
                 <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
             </div>
+            <div id="messageContainer"></div>
             <!-- Sử dụng các lớp CSS đã định nghĩa -->
             <button type="submit" class="btn btn-login">Đăng Nhập</button>
         </form>
@@ -28,6 +35,6 @@
             <p>Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a></p>
         </div>
     </div>
-
+    <script src="js/login.js"></script>
 </body>
 </html>

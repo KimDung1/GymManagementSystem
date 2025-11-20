@@ -7,12 +7,18 @@
     <title>Trang Đăng Ký</title>
     <!-- Cả hai file đều dùng chung 1 file CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Thêm style cho thông báo */
+        .message { margin-top: 15px; padding: 10px; border-radius: 5px; font-weight: bold; }
+        .message.error { background-color: #f8d7da; color: #721c24; }
+        .message.success { background-color: #d4edda; color: #155724; }
+    </style>
 </head>
 <body>
 
     <div class="form-container">
         <h2>Tạo Tài Khoản Mới</h2>
-        <form>
+        <form id="registerForm">
             <div class="input-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
@@ -25,6 +31,7 @@
                 <label for="confirm-password">Xác Nhận Mật Khẩu</label>
                 <input type="password" id="confirm-password" name="confirm-password" placeholder="Nhập lại mật khẩu" required>
             </div>
+            <div id="messageContainer"></div>
              <!-- Sử dụng các lớp CSS đã định nghĩa -->
             <button type="submit" class="btn btn-register">Đăng Ký</button>
         </form>
@@ -32,6 +39,6 @@
             <p>Đã có tài khoản? <a href="index.html">Đăng nhập</a></p>
         </div>
     </div>
-
+    <script src="js/register.js"></script>
 </body>
 </html>
