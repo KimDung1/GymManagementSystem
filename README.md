@@ -1,8 +1,26 @@
+# GymManagementSystem
+## 5 chức năng chính
+- QuanLyHoiVien - vet ngọc
+- QuanLyGoiTap - anh duy
+- QuanLyHLV- nhật thành
+- DatLichHoc_LopTap -tấn dũng
+- DangKy_DangNhap -kim dung
 
-# 📘 Gym Management System  
-Quản lý Huấn Luyện Viên & Hội Viên bằng HTML/CSS/JavaScript
 
----
+
+git clone https://github.com/KimDung1/GymManagementSystem.git
+cd GymManagementSystem
+git checkout branch-cua-ho( quanly-hoivien, quanly-goitap, quanly-hlv, dat-lich-hoc-lop-tap, dangky-dangnhap)
+
+
+## kiểm tra nhánh
+git branch
+
+## Khi code xong:
+
+git add .
+git commit -m "Hoàn thành chức năng X"
+git push
 
 # 👤 Lê Nguyễn Nhật Thành  
 ## 📂 1. QuanLyHLV – Quản lý Huấn Luyện Viên
