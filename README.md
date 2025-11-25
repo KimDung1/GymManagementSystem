@@ -98,6 +98,9 @@ QuanLyHoiVien/
    git clone https://github.com/KimDung1/GymManagementSystem.git
    cd GymManagementSystem
    git checkout dangky-dangnhap
+   cd DangKy_DangNhap/backend
+   npm install
+   npm start
 Truy cập:
 http://localhost:3000
 2.**⚡ Hoạt động
