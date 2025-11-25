@@ -1,0 +1,75 @@
+
+
+# 📘 Gym Management System  
+Quản lý Huấn Luyện Viên & Hội Viên bằng HTML/CSS/JavaScript
+
+---
+
+# 👤 Lê Nguyễn Nhật Thành  
+## 📂 1. QuanLyHLV – Quản lý Huấn Luyện Viên
+
+### 🔥 Tính năng chính
+- Xem danh sách HLV (ID, tên, chuyên môn, email, số ĐT, giới hạn học viên, trạng thái).
+- Thêm HLV qua modal.
+- Sửa thông tin HLV (form tự động điền lại dữ liệu).
+- Xóa HLV (confirm hộp thoại).
+- **Sinh ID tự động** – dạng `HLV001`, `HLV002`, …
+- **Lưu dữ liệu vào localStorage**, load lại trang không bị mất.
+- Giao diện dạng **UI dashboard** với bảng + sidebar + responsive cơ bản.
+
+### 🛠 Công nghệ sử dụng
+- HTML5  
+- CSS3  
+- JavaScript (localStorage + DOM + modal logic)
+
+### 📁 Cấu trúc thư mục
+```
+
+QuanLyHLV/
+├─ index.html
+├─ style.css
+└─ script.js
+
+```
+
+### ▶️ Cách chạy
+1. Mở thư mục **QuanLyHLV**  
+2. Click **index.html** hoặc chạy bằng **Live Server**  
+3. Dữ liệu tự động load từ **localStorage**
+
+---
+
+# 👤 Lê Viết Ngọc  
+## 📂 2. QuanLyHoiVien – Quản lý Hội Viên
+
+### 🔥 Tính năng chính
+- Xem danh sách hội viên (ID, tên, SĐT, trạng thái, gói tập, ngày hết hạn).
+- Thêm hội viên bằng modal.
+- Sửa thông tin (tự fill lại dữ liệu).
+- Xóa hội viên (confirm hộp thoại).
+- **Sinh ID tự tăng** (ID cuối + 1).
+- Giao diện dashboard thống nhất với module HLV.
+
+> ⚠️ **Lưu ý:** phiên bản này **chưa dùng localStorage**, nên reload trang sẽ reset về dữ liệu mặc định.
+
+### 🛠 Công nghệ sử dụng
+- HTML5  
+- CSS3  
+- JavaScript (DOM manipulation)
+
+### 📁 Cấu trúc thư mục
+```
+
+QuanLyHoiVien/
+├─ index.html
+├─ style.css
+└─ script.js
+
+```
+
+### ▶️ Cách chạy
+1. Mở thư mục **QuanLyHoiVien**  
+2. Click **index.html** hoặc dùng **Live Server**
+
+
+
