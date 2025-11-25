@@ -41,11 +41,6 @@ Email: admin@example.com
 
 Mật khẩu: 123456
 
-📁 Cấu trúc
-arduino
-Sao chép mã
-backend/   - Server Node.js + MySQL
-frontend/  - Giao diện đăng nhập/đăng ký
 
 
  
