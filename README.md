@@ -88,7 +88,7 @@ QuanLyHoiVien/
 1. Mở thư mục **QuanLyHoiVien**  
 2. Click **index.html** hoặc dùng **Live Server**
 
-# Le Kim Dũng
+# Lê Kim Dũng
 ##🏋️ Hệ Thống Đăng Ký & Đăng Nhập - Phòng Gym
 
 ## 📦 Cài Đặt & Chạy
@@ -101,17 +101,18 @@ QuanLyHoiVien/
    cd DangKy_DangNhap/backend
    npm install
    npm start
-Truy cập:
-http://localhost:3000
+    ```
+   Truy cập:
+   http://localhost:3000
 2. **⚡ Hoạt động **
-Đăng ký
-Tạo tài khoản mới → Lưu database
+   Đăng ký
+   Tạo tài khoản mới → Lưu database
 
-Đăng nhập
-Kiểm tra email/mật khẩu → Tạo session
+   Đăng nhập
+   Kiểm tra email/mật khẩu → Tạo session
 
-Chuyển hướng
-Sau đăng nhập → Trang đặt lịch học
+   Chuyển hướng
+   Sau đăng nhập → Trang đặt lịch học
 
 3. **👤 Test nhanh **
  ```
