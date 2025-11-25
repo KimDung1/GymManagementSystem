@@ -88,5 +88,36 @@ QuanLyHoiVien/
 1. Mở thư mục **QuanLyHoiVien**  
 2. Click **index.html** hoặc dùng **Live Server**
 
+# Le Kim Dũng
+##🏋️ Hệ Thống Đăng Ký & Đăng Nhập - Phòng Gym
 
+## 📦 Cài Đặt & Chạy
+
+1. **Clone repository và chuyển sang nhánh đăng nhập:**
+   ```bash
+   git clone https://github.com/KimDung1/GymManagementSystem.git
+   cd GymManagementSystem
+   git checkout dangky-dangnhap
+Truy cập:
+http://localhost:3000
+2.**⚡ Hoạt động
+Đăng ký
+Tạo tài khoản mới → Lưu database
+
+Đăng nhập
+Kiểm tra email/mật khẩu → Tạo session
+
+Chuyển hướng
+Sau đăng nhập → Trang đặt lịch học
+
+3.**👤 Test nhanh
+ ```
+Email: admin@example.com
+
+Mật khẩu: 123456
+ ```
+4.**📁 Cấu trúc
+ ```
+backend/   - Server Node.js + MySQL
+frontend/  - Giao diện đăng nhập/đăng ký
 
