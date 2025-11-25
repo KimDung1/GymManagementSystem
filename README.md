@@ -103,7 +103,7 @@ QuanLyHoiVien/
    npm start
 Truy cập:
 http://localhost:3000
-2.**⚡ Hoạt động
+2. **⚡ Hoạt động **
 Đăng ký
 Tạo tài khoản mới → Lưu database
 
@@ -113,13 +113,13 @@ Kiểm tra email/mật khẩu → Tạo session
 Chuyển hướng
 Sau đăng nhập → Trang đặt lịch học
 
-3.**👤 Test nhanh
+3. **👤 Test nhanh **
  ```
 Email: admin@example.com
 
 Mật khẩu: 123456
  ```
-4.**📁 Cấu trúc
+4. **📁 Cấu trúc**
  ```
 backend/   - Server Node.js + MySQL
 frontend/  - Giao diện đăng nhập/đăng ký
