@@ -125,3 +125,45 @@ Mật khẩu: 123456
 backend/   - Server Node.js + MySQL
 frontend/  - Giao diện đăng nhập/đăng ký
 
+#📅 MODULE: ĐẶT LỊCH HỌC & LỚP TẬP (DatLichHoc_LopTap)
+##👤 Tấn Dũng
+###📂 1. DatLichHoc_LopTap – Đặt Lịch Học & Lớp Tập
+###🔥 Tính năng chính
+-Xem danh sách Lớp Tập đang mở (ID, tên, lịch, giờ, HLV, số lượng đăng ký/tối đa).
+-Thêm Lớp Mới qua modal (gọi API).
+-Đặt Lịch Học cho học viên (modal xác nhận, kiểm tra trùng lịch).
+-Xem và Quản lý Danh sách Lịch Đã Đặt (HV, Lớp, Ngày, Trạng thái).
+-Cập nhật Trạng thái Tự động: Backend tự động chuyển lịch đã qua ngày/giờ sang Đã học.
+-Xóa Lịch Đặt Hàng Loạt: Cho phép chọn (tích) nhiều mục và xóa (Bulk Delete).
+-Báo Cáo Excel: Xuất báo cáo tổng hợp và lịch HLV ra file .xlsx.
+-Nhắc Lịch (15p): Kích hoạt dịch vụ alert trên trình duyệt 15 phút trước giờ tập.
+###🛠 Công nghệ sử dụng
+-Backend: Node.js (Express) và MySQL.
+-Dependencies: mysql2, cors, bodyParser, exceljs.
+-Frontend: HTML5, CSS3, JavaScript (Fetch API, DOM Manipulation, Modal logic).
+###📁 Cấu trúc thư mục
+```
+DatLichHoc_LopTap/
+├─ index.html        <-- Giao diện Frontend
+├─ style.css         <-- CSS
+└─ backend/
+   └─ server.js      <-- Backend API (Node.js/Express)
+
+```
+###▶️ Cách chạy
+-Để chạy module full-stack này, bạn cần thực hiện 3 bước: Cấu hình DB, Khởi động Backend, và Mở Frontend.
+-Cấu hình Database: Đảm bảo MySQL Server đang chạy và database quanly_lichhoc đã được tạo.
+-Khởi động Backend:
+-Mở Terminal/PowerShell và gõ lệnh
+```bash
+ cd GymManagementSystem\DatLichHoc_LopTap\backend.
+ npm install
+ npm install express mysql2 cors body-parser exceljs
+ node -v
+```
+-Chạy lệnh: node server.js
+-(Server phải báo 🚀 Server chạy tại http://localhost:5000)
+-Mở Frontend:
+-Mở thư mục DatLichHoc_LopTap.
+-Click đúp vào file index.html hoặc chạy bằng Live Server.
+-(Frontend sẽ tự động gọi API từ cổng 5000 để load dữ liệu.)
