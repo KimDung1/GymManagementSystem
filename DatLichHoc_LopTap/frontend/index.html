@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Đặt lịch & Lớp tập (HTML/CSS Only)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="modal-dat-lich" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>➕ Thêm Tác vụ / Đặt lịch mới</h3>
+            <form id="form-them-tac-vu">
+                <div class="form-group">
+                    <label for="ten-tac-vu">Tên Tác vụ (Ví dụ: Đặt Yoga)</label>
+                    <input type="text" id="ten-tac-vu" required>
+                </div>
+                <div class="form-group">
+                    <label for="ngay-tac-vu">Ngày Thực hiện</label>
+                    <input type="date" id="ngay-tac-vu" required>
+                </div>
+                <div class="form-group">
+                    <label for="ghi-chu">Ghi chú</label>
+                    <textarea id="ghi-chu"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Lưu Tác vụ</button>
+            </form>
+            <p class="warning-text">Lưu ý: Chức năng này chỉ ghi log ra console vì không có Database.</p>
+        </div>
+    </div>
+
+    <div class="header">
+        <div>
+            <h2>Quản lý Đặt lịch & Lớp tập</h2>
+            <p>Giao diện quản lý lịch học và lớp tập </p>
+        </div>
+        <button class="btn-primary" id="btn-mo-modal">+ Tác vụ mới</button> 
+    </div>
+    
+    <script>
+        // ... Code JavaScript sẽ được thêm vào đây ...
+    </script>
+</body>
+</html>
+
+   
+    <div class="container">
+        <div class="left-panel">
+            
+            <div class="tabs-control">
+                <input type="radio" id="tab-lich-tuan" name="tabs" checked>
+                <label for="tab-lich-tuan" class="tab">Lịch tuần</label>
+
+                <input type="radio" id="tab-danh-sach" name="tabs">
+                <label for="tab-danh-sach" class="tab">Danh sách</label>
+
+                <div class="tab-content-container">
+                    
+                    <div id="content-lich-tuan" class="tab-content">
+                        <div class="card">
+                            <h3>📅 Tổng quan lịch </h3>
+                            <p>Thứ 6, 21/11/2025: **Yoga Buổi Sáng** (7:00 - 8:00, HLV Lê Hoàng)</p>
+                            <p>Thứ 3, 25/11/2025: **Giảm Cân Toàn Thân** (18:00 - 19:30, HLV Phạm Mai)</p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div id="content-danh-sach" class="tab-content">
+                         <div class="card">
+                            <h3>📚 Danh sách Lịch đã đặt (Tĩnh)</h3>
+                            <table class="lich-table">
+                                <thead>
+                                    <tr>
+                                        <th>Học viên</th>
+                                        <th>Lớp tập</th>
+                                        <th>Ngày học</th>
+                                        <th>Trạng thái</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>Yoga Buổi Sáng</td>
+                                        <td>21/11/2025</td>
+                                        <td><span class="status-dat">Đã đặt</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trần Thị B</td>
+                                        <td>Giảm Cân Toàn Thân</td>
+                                        <td>20/11/2025</td>
+                                        <td><span class="status-hoc">Đã học</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="right-panel">
+
+            <div class="card">
+                <h3>🏋️ Lớp đang mở (Dữ liệu tĩnh)</h3>
+                <div class="lop-item">
+                    <h4>Yoga Buổi Sáng (Thứ 2 - 4 - 6)</h4>
+                    <p>HLV: Lê Hoàng | Giờ: 7:00 - 8:00</p>
+                    <p class="lop-info">Đã Đăng ký: **5** / 15</p>
+                    <button class="btn-dat-lich">Đăng ký ngay</button>
+                </div>
+                <div class="lop-item">
+                    <h4>Giảm Cân Toàn Thân (Thứ 3 - 5 - 7)</h4>
+                    <p>HLV: Phạm Mai | Giờ: 18:00 - 19:30</p>
+                    <p class="lop-info">Đã Đăng ký: **12** / 25</p>
+                    <button class="btn-dat-lich">Đăng ký ngay</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Tác vụ nhanh</h3>
+                <button class="action-btn">📊 Xuất báo cáo đăng ký</button>
+                <button class="action-btn">👩‍🏫 Xem lịch huấn luyện viên</button>
+                <button class="action-btn">🔔 Thông báo nhắc lịch</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-box">
+            <h3 class="blue">3</h3>
+            <p>Tổng lớp</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 class="green">15</h3>
+            <p>Lịch tuần này</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 class="orange">85%</h3>
+            <p>Tỷ lệ lấp đầy</p>
+        </div>
+    </div>
+<script>
+    // Lấy các phần tử HTML
+    const modal = document.getElementById('modal-dat-lich');
+    const btnMoModal = document.getElementById('btn-mo-modal');
+    const btnDongModal = document.querySelector('.close-btn');
+    const form = document.getElementById('form-them-tac-vu');
+
+    // 1. Mở Modal
+    btnMoModal.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // 2. Đóng Modal khi nhấn nút X
+    btnDongModal.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // 3. Đóng Modal khi nhấn ra ngoài
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // 4. Xử lý Form Submit
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Ngăn chặn form submit mặc định
+
+        const tenTacVu = document.getElementById('ten-tac-vu').value;
+        const ngayTacVu = document.getElementById('ngay-tac-vu').value;
+        const ghiChu = document.getElementById('ghi-chu').value;
+
+        // In kết quả ra console (vì không có DB)
+        console.log("=========================================");
+        console.log("✅ TÁC VỤ MỚI ĐÃ ĐƯỢC THÊM (Log)");
+        console.log("Tên Tác vụ:", tenTacVu);
+        console.log("Ngày:", ngayTacVu);
+        console.log("Ghi chú:", ghiChu);
+        console.log("=========================================");
+
+        // Hiển thị thông báo và đóng modal
+        alert(`Đã ghi nhận tác vụ: "${tenTacVu}" vào ngày ${ngayTacVu}. Kiểm tra Console!`);
+        modal.style.display = "none";
+        form.reset(); // Xóa dữ liệu form
+    });
+</script>
+</body>
+</html>
