@@ -1,8 +1,8 @@
 # GymManagementSystem
 ## 5 chức năng chính
-- QuanLyHoiVien - vet ngọc
+- QuanLyHoiVien - Viết Ngọc
 - QuanLyGoiTap - anh duy
-- QuanLyHLV- nhật thành
+- QuanLyHLV- Nhật Thành
 - DatLichHoc_LopTap -tấn dũng
 - DangKy_DangNhap -kim dung
 
