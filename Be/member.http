@@ -1,0 +1,29 @@
+# POST http://localhost:3001/api/members
+# Content-Type: application/json
+
+# {
+#     "fullName" : "3",
+#     "phone" : "3",
+#     "status" : "false",
+#     "package" : "3",
+#     "expiredDate" : "3"
+# }
+
+# GET http://localhost:3001/api/members
+# Content-Type: application/json
+
+# PUT http://localhost:3001/api/members/692457f6659a74f4635e8cde
+# Content-Type: application/json
+
+# {
+#     "fullName" : "2",
+#     "phone" : "2",
+#     "status" : "false",
+#     "package" : "2",
+#     "expiredDate" : "2"
+# }
+
+# DELETE http://localhost:3001/api/members/692457f6659a74f4635e8cde
+# Content-Type: application/json
+
+

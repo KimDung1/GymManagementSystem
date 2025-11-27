@@ -1,0 +1,31 @@
+# POST http://localhost:3001/api/coachs
+# Content-Type: application/json
+
+# {
+#     "fullName" : "4",
+#     "phone" : "4",
+#     "email" : "4",
+#     "speciality" : "4",
+#     "limitedStudent" : "4",
+#     "status" : "false"
+# }
+
+GET http://localhost:3001/api/coachs
+Content-Type: application/json
+
+# PUT http://localhost:3001/api/coachs/69245b1bcc14d3b5664b0ba6
+# Content-Type: application/json
+
+# {
+#     "fullName" : "2",
+#     "phone" : "2",
+#     "email" : "2",
+#     "speciality" : "2",
+#     "limitedStudent" : "2",
+#     "status" : "false"
+# }
+
+# DELETE http://localhost:3001/api/coachs/69245b1bcc14d3b5664b0ba6
+# Content-Type: application/json
+
+
