@@ -124,7 +124,7 @@ Mật khẩu: 123456
  ```
 backend/   - Server Node.js + MySQL
 frontend/  - Giao diện đăng nhập/đăng ký
-
+ ```
 # 📅 MODULE: ĐẶT LỊCH HỌC & LỚP TẬP (DatLichHoc_LopTap)
 
 Một phần của Hệ thống Quản lý Phòng Gym (Gym Management System) - Phát triển bởi **Tấn Dũng**.
@@ -167,3 +167,54 @@ Module **DatLichHoc_LopTap** cung cấp giao diện và API mạnh mẽ để qu
 ---
 
 ## 📁 Cấu trúc Thư mục
+```
+DatLichHoc_LopTap/
+├─ index.html          <-- Giao diện Frontend (HTML)
+├─ style.css           <-- Định kiểu giao diện (CSS)
+└─ backend/
+└─ server.js       <-- Lõi API Backend (Node.js/Express)
+```
+---
+
+## ▶️ Hướng dẫn Khởi chạy (Full-Stack)
+
+Để chạy và sử dụng module này, bạn cần thực hiện ba bước chính: **Cấu hình DB**, **Khởi động Backend**, và **Mở Frontend**.
+
+### 1. Cấu hình Database
+
+1.  Đảm bảo **MySQL Server** của bạn đang chạy.
+2.  Tạo database với tên bắt buộc là: `quanly_lichhoc`.
+3.  (Tùy chọn: Import cấu trúc bảng và dữ liệu mẫu nếu có, chi tiết xem trong tài liệu `docs/database_schema.sql`).
+
+### 2. Khởi động Backend (API Server)
+
+1.  **Mở Terminal** (hoặc PowerShell/Command Prompt).
+2.  Di chuyển vào thư mục backend:
+    ```bash
+    cd GymManagementSystem\DatLichHoc_LopTap\backend
+    ```
+3.  **Cài đặt các gói phụ thuộc** (Dependencies):
+    ```bash
+    npm install
+    # Hoặc cài đặt thủ công nếu npm install bị lỗi:
+    # npm install express mysql2 cors body-parser exceljs
+    ```
+4.  **Chạy Server:**
+    ```bash
+    node server.js
+    ```
+    * **Kiểm tra:** Server phải hiển thị thông báo: **🚀 Server chạy tại http://localhost:5000**
+
+### 3. Mở Frontend (Giao diện người dùng)
+
+1.  Truy cập thư mục `DatLichHoc_LopTap`.
+2.  **Mở file `index.html`** bằng một trong các cách sau:
+    * Click đúp vào file `index.html`.
+    * Sử dụng Extension **Live Server** trong VS Code.
+3.  **Hoàn thành:** Giao diện Frontend sẽ tự động gọi API từ cổng **5000** để tải danh sách lớp tập và các dữ liệu liên quan.
+
+---
+
+## 📝 Giấy phép (License)
+
+* Sản phẩm này được phát triển cho mục đích học tập và quản lý nội bộ. (Cần bổ sung thông tin License chi tiết nếu có).
