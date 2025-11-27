@@ -80,7 +80,7 @@ Tạo file:
 Nội dung:
 
 ``` env
-REACT_APP_API_URL=http://localhost:3001/api
+VITE_API_BASE_URL=http://localhost:3001/api
 ```
 
 Tạo file mẫu:
@@ -90,7 +90,7 @@ Tạo file mẫu:
 Nội dung:
 
 ``` env
-REACT_APP_API_URL=
+VITE_API_BASE_URL=
 ```
 
 ------------------------------------------------------------------------
